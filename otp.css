@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    background-image: url('img.gif'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Change to column layout on small screens */
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px; /* Add some padding for small screens */
+}
+
+.img-box {
+    width: 100%;
+    height: auto;
+}
+
+.verification-container {
+    text-align: center;
+    width: 90%; /* Full width with some padding on small screens */
+    max-width: 600px; /* Limit the maximum width */
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    margin-right: 0; /* Remove margin on small screens */
+}
+
+.verification-form h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Adjust font size for small screens */
+}
+
+.otp-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between input boxes */
+    margin-bottom: 20px;
+}
+
+.otp-boxes input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid #2C2C2C;
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0057ff;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0041cc;
+}
+
+.resend-btn {
+    background-color: #e0e0e0; /* Light color for resend button */
+    color: #121212; /* Dark text color for visibility */
+    margin-top: 5px;
+}
+
+.resend-btn:hover {
+    background-color: #c0c0c0; /* Darker color on hover */
+}
+
+.inquiry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    color: #bbb;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px; /* Reduced margin for small screens */
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Switch to row layout on medium screens and up */
+    }
+
+    .img-box {
+        width: 50%; /* Half-width on medium screens and up */
+    }
+
+    .verification-container {
+        margin-right: 150px; /* Restore margin on larger screens */
+        width: 40%; /* Adjust width for larger screens */
+    }
+
+    .verification-form h1 {
+        font-size: 2rem; /* Restore larger font size on larger screens */
+    }
+}
