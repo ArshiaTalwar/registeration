@@ -13,7 +13,7 @@
         </div>
         <div class="container">
             <div class="img-box">
-          <img src="./aa.png" height="80%" width="100%" scale="2">
+          <img src="./aa.png" height="100%" width="100%" scale="2">
     
             </div>
             <div class="registration-container">
@@ -69,16 +69,22 @@
                             <label for="mobile-number">Mobile No.</label>
                             <input type="text" id="mobile-number" placeholder="Mobile No.">
                         </div>
-                        <button type="submit">Verify</button>
+                <button type="submit" onclick="otpPage()" >Verify</button>
                     </form>
                 </div>
     
                <!-- Moved outside form -->
             </div>
         </div>
-        <div class="inquiry">
-            <p>For Inquiry: +91-9870123456 | +91-9876543210</p>
-        </div>
+            <div class="inquiry">
+                <p>For Inquiry: +91-9870123456 | +91-9876543210</p>
+            </div>
     </div>
+    <script>
+        function otpPage() {
+            window.location.href = "registeration/otp.html"; // Replace with the URL of your target page
+        }
+    </script>
+    
 </body>
 </html>
